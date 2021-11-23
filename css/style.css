@@ -136,6 +136,14 @@ nav ul li #btn_profile::after{
     nav ul li#space2{
         display: none;
     }
+    .col-md-9 {
+        background-color: #fff;
+    padding: 0px;
+}
+.col-md-6 {
+        background-color: #fff;
+    padding: 0px;
+}
     nav ul{
         min-width: 600px;
         padding: 8px 12px;
@@ -466,6 +474,14 @@ align-self: flex-end;
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+  .col-md-9 {
+        background-color: #fff;
+    padding: 0px;
+}
+.col-md-6 {
+        background-color: #fff;
+    padding: 0px;
+}
 }
 
 
