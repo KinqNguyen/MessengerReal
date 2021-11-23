@@ -364,7 +364,9 @@ align-items: center;
 height:54px;
     box-shadow: 0 1px 8px rgba(110, 83, 83, 0.6);
 }
-
+.input-text{
+    flex-grow: 3;
+}
 
 .right-text{
 align-self: flex-end;
