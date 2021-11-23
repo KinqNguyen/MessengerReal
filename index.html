@@ -31,7 +31,7 @@
 
 				<li id="space1"></li>
 				<li> <img id="btn_plus" class="img-fluid" src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-1/c1.2.238.239a/p240x240/195521654_1705320166523523_5168465003600697018_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=7206a8&_nc_ohc=FZVwfOG6NsQAX-ENxt8&_nc_ht=scontent.fsgn4-1.fna&oh=5d5cd488bce22275b8bad6908b9c5d70&oe=61BEE75C"> </li> 
-				<li><h4>ahihi</h4></li>
+				<li><h4>Kiet</h4></li>
 				<li> <button  id="btn_msg"><i  class="bi bi-grid-3x3-gap-fill"></i></button></li>
 				<li> <button  id="btn_bell"> <i class="bi bi-bell-fill"></i></button></li>
 				<li>  <button id="btn_profile"><i class="bi bi-caret-down-fill"></i></button>  </li>
@@ -65,12 +65,14 @@
 						</div>
 
 					</div>
-					<div class="input-group rounded">
-						<span class="input-group-text border-0" id="search-addon">
+					<div style="border: 1px solid black; border-radius: 25px !important; max-width: 365px;" class="input-group rounded">
+						<span class="input-group-text border-0" style="background-color: rgb(255, 255, 255) ;border-color: black;border-top-left-radius: 66px;
+  								  border-bottom-left-radius: 66px;" id="search-addon">
 						
 						<button class="btn btn-light"><i class="bi bi-search"></i></button>	
 					</span>
-					<input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+					<input style=" border-top-right-radius: 66px;
+  								  border-bottom-right-radius: 66px;" type="search" class="form-control bitch" placeholder="Search" aria-label="Search"
 					aria-describedby="search-addon" />
 					
 					</div>
@@ -282,7 +284,7 @@
 				<div style="padding: 35px 20px;"> 
 					<a href="#"><i class="bi bi-telephone-fill abc"></i></a>
 					<a href="#"><i class="bi bi-camera-video-fill abc"></i></a>
-					<a href="#"><i class="bi bi-exclamation-circle-fill abc"></i></i></a>
+					<a class="taolao1" onclick="info_function()" href="#"><i class="bi bi-exclamation-circle-fill abc"></i></i></a>
 					
 					
 				</div>
@@ -505,22 +507,22 @@
 			
 				<div class="input-place" >
 					<div class="action-icon">
-						<div class="iconP icon1">
-
+						<div class="iconP">
+							<a href="#"><i class="bi bi-plus-circle-fill"></i></a>
 						</div>
-						<div class="iconP icon2">
-
+						<div class="iconP">
+							<a href="#"><i class="bi bi-image-fill"></i></a>
 						</div>
-						<div class="iconP icon3">
-
+						<div class="iconP ">
+							<a href="#"><i class="bi bi-sticky-fill"></i></a>
 						</div>
-						<div class="iconP icon4">
-
+						<div class="iconP ">
+							<a href="#"><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
 						</div>
 					</div>
 
 					<div class="input-text">
-						    <input type="input" class="form-control"  placeholder="Aa">
+						    <input type="input" class="form-control" style="    border-radius: 20px;" placeholder="Aa">
 
 					</div>
 					<div class="send-icon" >
@@ -529,11 +531,28 @@
 						</div>
 					</div>
 				</div>
+
+
+				<div class="col-md-3" id="notmain" style="display:none">
+					efrfr test
+					Thang Phat Code
+
+				</div>
+
+
 		</div>
 	</div>
 </div>
 
 <script>
+
+	function info_function() {
+    	document.getElementById("main").className = "col-md-6";
+		document.getElementById("notmain").style = "display:block";
+	}
+
+
+
 	function myFunction() {
 		
     document.getElementById("btnbtn").style.background = "#8f8f8f";
