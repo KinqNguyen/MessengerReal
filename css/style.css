@@ -15,6 +15,7 @@ nav{
 nav ul {
     margin: 0;
     padding: 8px 15px;
+    background-color: #fff;
     list-style: none;
     display: flex;
     box-shadow: 0 1px 8px rgba(110, 83, 83, 0.1);
@@ -144,15 +145,21 @@ nav ul li #btn_profile::after{
         --btn-width-100: 60px;
     }
 }
-<<<<<<< HEAD
 
 @media (min-width: 992px){
 .col-md-3 {
+    box-shadow: 0 1px 8px rgb(110 83 83 / 10%);
     width: 25%;
     padding-left: 5px;
+    background-color: #fff;
     padding-right: 0;
 }
 .col-md-9 {
+        background-color: #fff;
+    padding: 0px;
+}
+.col-md-6 {
+        background-color: #fff;
     padding: 0px;
 }
 }
@@ -461,7 +468,7 @@ align-self: flex-end;
   .sidebar a {font-size: 18px;}
 }
 
-=======
+
 body{
     background:#eee
 }
@@ -1368,4 +1375,3 @@ body{
         margin-bottom: 20px
     }
 }
->>>>>>> b679352e7edc7e53e447eabc944581ca559dd583

@@ -39,6 +39,9 @@
 		</nav>
 	</header>
 
+	<div style=" height: 1px; z-index: 6;box-shadow: 0 1px 8px rgb(110 83 83 / 10%);">
+
+	</div>
 
 
 <div class="container-fluid">
@@ -533,7 +536,7 @@
 				</div>
 
 
-				<div class="col-md-3" id="notmain" style="display:none">
+				<div class="col-md-0" id="notmain" style="display:none">
 					efrfr test
 					Thang Phat Code
 
@@ -547,16 +550,28 @@
 <script>
 
 	function info_function() {
+
+				if(document.getElementById("notmain").className == "col-md-3"){
+			document.getElementById("notmain").style = "display:none;   animation-duration: 4s;  transition: 2s;";
+			document.getElementById("main").className = "col-md-9";
+			document.getElementById("notmain").className = "col-md-0"	
+		}
+			else{
+		document.getElementById("notmain").className = "col-md-3"	
     	document.getElementById("main").className = "col-md-6";
-		document.getElementById("notmain").style = "display:block";
+		document.getElementById("notmain").style = "display:block;  animation-duration: 4s;  transition:  2s;";
+		//document.getElementById("notmain").className = "yesmain";
+	}
+
+
+
 	}
 
 
 
 	function myFunction() {
-		
-    document.getElementById("btnbtn").style.background = "#8f8f8f";
-}
+    	document.getElementById("btnbtn").style.background = "#8f8f8f";
+	}
 </script>
 
 </body>
