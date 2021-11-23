@@ -352,6 +352,10 @@ nav ul li #btn_profile::after{
     background-color: #0B84ED;
 }
 
+.input-text{
+    flex-grow: 3;
+}
+
 .input-place{
     display: flex;
 background-color: #fff;
