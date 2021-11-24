@@ -8,11 +8,11 @@ body{
     margin: 0;
     padding: 0;
 }
-nav{
+.nav1{
     margin: 0;
     padding: 0;
 }
-nav ul {
+.nav1 ul {
     margin: 0;
     padding: 8px 15px;
     background-color: #fff;
@@ -20,14 +20,14 @@ nav ul {
     display: flex;
     box-shadow: 0 1px 8px rgba(110, 83, 83, 0.1);
 }
-nav ul li {
+.nav1 ul li {
     padding: 3px;
 }
-nav ul li a{
+.nav1 ul li a{
     display: inline-block;
     text-decoration: none;
 }
-nav ul li #fb{
+.nav1 ul li #fb{
     background: #0B84ED;
     color: #fff;
     width: 40px;
@@ -39,11 +39,11 @@ nav ul li #fb{
     font-size: 2rem;
 }
 
-nav ul li #fb:hover{
+.nav1 ul li #fb:hover{
     background: black;
     color: blue;
 }
-nav ul li #search_btn{
+.nav1 ul li #search_btn{
     border: none;
     outline: none;
     background: rgba(0, 0, 0, 0.068);
@@ -56,13 +56,13 @@ nav ul li #search_btn{
     cursor: pointer;
     
 }
-nav ul li#space1{
+.nav1 ul li#space1{
     flex: 1;
 }
-nav ul li#space2{
+.nav1 ul li#space2{
     flex: 2;
 }
-nav ul li a{
+.nav1 ul li a{
     height: 40px;
     width: var(--btn-width-100);
     font-size: 1.5rem;
@@ -73,10 +73,10 @@ nav ul li a{
     transition: .5s;
 
 }
-nav ul li #btn_plus,
-nav ul li #btn_msg,
-nav ul li #btn_bell,
-nav ul li #btn_profile{
+.nav1 ul li #btn_plus,
+.nav1 ul li #btn_msg,
+.nav1 ul li #btn_bell,
+.nav1 ul li #btn_profile{
     height: 40px;
     width: 40px;
     display: flex;
@@ -90,10 +90,10 @@ nav ul li #btn_profile{
     border-radius: 50%;
     cursor: pointer;
 }
-nav ul li:hover #home, 
-nav ul li:hover #group, 
-nav ul li:hover #tv, 
-nav ul li:hover #friend{
+.nav1 ul li:hover #home, 
+.nav1 ul li:hover #group, 
+.nav1 ul li:hover #tv, 
+.nav1 ul li:hover #friend{
     background: rgba(0, 0, 0, 0.138);
     color: #444;
     border-radius: 5px;
@@ -461,10 +461,131 @@ align-self: flex-end;
 .chat-picture{
     margin-right: 10px;
     border-radius: 50%;
-    max-height: 56px;
-    max-width: 56px;
+   height: 56px;
+    width: 56px;
 
 }
+
+
+
+/* Infomation */
+
+
+.text-pic{
+    margin: 5px 10px 2px 100px;
+
+    border-radius: 60%;
+    width: 150px;
+}
+.online_icon2{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    bottom: 27em;
+    right: 6.8em;
+    border: 3px solid white;
+}
+.text_1{
+   padding-left: 115px;
+   
+}
+
+/* dropdown */
+
+body {
+	background: #f2f2f2;
+	font-size: 1.25em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav3 {
+
+	text-align: center;
+}
+.nav3 ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+.nav3 ul ul {
+	display: none;
+}
+
+.nav3 ul li:hover > ul {
+	display: block;
+}
+
+.nav3 ul li {
+	float: left;
+	width: 330px;
+	text-align: left;
+
+}
+	
+.nav3 ul li:hover {
+	background: #f2f2f2;
+}
+
+.nav3 ul li a {
+	display: block; 
+	color: #2a2a2a; 
+	text-decoration: none;
+}
+					
+.nav3 ul ul {
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+}
+
+.nav3 ul ul li {
+	float: none;
+	border-bottom: 2px solid #eaeaea; 
+	position: relative;
+}
+
+.nav3 ul ul li a {
+	padding: 15px 10px;
+	color: #838383;
+    background-color: #ffffff;
+}	
+
+.nav3 ul ul li a:hover {
+    background-color: #0B84ED;
+	color: black;
+    
+}	
+
+#down-triangle {
+	float: right;
+	width: 0; 
+ 	height: 0;
+ 	margin-top: 10px;
+    border-top: 10px solid #000;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+}
+
+.circle {
+    background-color: white;
+	float: right;
+	display: inline;
+	width: 10px;
+ 	height: 10px; 
+ 	margin-top: 5px;
+  -moz-border-radius: 100%; 
+  -webkit-border-radius: 100%; 
+  border-radius: 100%;
+}
+
+/* Infomation */
+
 
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
